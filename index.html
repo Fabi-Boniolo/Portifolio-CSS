@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+<link rel = "preconnect" href = "https://fonts.googleapis.com">
+<link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+<link href = "https: //fonts.googleapis.com/css2? família = Poppins: ital, peso @ 0,300; 0,600; 0,700; 1,200; 1,300; 1,400; 1,500 & display = swap 
+"rel =" stylesheet ">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Fabi Boniolo</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="Fp5png.png" alt="Logo">
+        </div>
+        <ul>
+            <li>
+                <a target="blank" href="https://github.com/fabi-boniolo">github</a>
+            </li>
+            <li>
+                <a target="blank" href="mailto:fabianaboniolo@hotmail.com">email</a>
+            </li>
+            <li>
+                <a target="blank" href="https://wa.me/24998140705">whatsapp</a>
+            </li>
+            <li>
+                <a target="blank" href="https://www.linkedin.com/in/dev-fabiana-boniolo/">linkedin</a>
+            </li>
+        </ul>
+    </header>
+    
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Fabi Boniolo</h1>
+                <h5>Desenvolvedor FullStack</h5>
+            </div>
+
+            <div onclick = "displayAbout()" id="arrow">
+                <i id="animation" class="fas fa-sort-down"></i>
+            </div>
+            
+            <div style="display: none;" id="about">
+                <p>
+                    
+                    Olá! Meu nome é Fabiana, sou apaixonada por tecnologia, me formei em TI pela Universidade Paulista (UNIP) em 2016, e em Sistemas da Computação pela Universidade Federal Fluminense (UFF) em 2021. Cursei Python e Django pela Python Pro e atualmente cursando FullStack pela Gama Academy. A magia da tecnologia contagia nossas vidas, fazendo com que o ciclo do aprendizado seja continuo, pois a cada ciclo tudo se modifica, tudo se renova, tudo se transforma, o tudo é novo em constante movimento...
+                </p>
+                
+            </div>
+
+            <div class="form">
+                <div>
+                    <p>deixe seu contato</p>
+                </div>
+
+                <form action="">
+                    <input type="text" placeholder="seu melhor email :)">
+                    <button>enviar!</button>
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+    
+</body>
+</html>
